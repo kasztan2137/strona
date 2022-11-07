@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    background-color: #0F5766;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.nav_btn a, .contact {
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: whitesmoke;
+    text-decoration: none;
+    background: #0F3F49;
+}
+
+.nav_bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10px;
+    background: #0F3F49;
+}
+
+.logo {
+    cursor: pointer;
+    margin-left: 15px;
+    background-color: #0F3F49;
+    height: 100px;
+}
+
+.nav_links {
+    list-style: none; 
+    background-color: #0F3F49;   
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+    background: #0F3F49;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+    background-color: #0F3F49;
+}
+
+.nav_links li a:hover {
+    color: #25FF68;
+}
+
+.contact {
+    padding: 9px;
+    background-color: #47A354;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+    margin: 15px;
+}
+
+.contact:hover {
+    background-color: #25FF68
+    
+}
+
+.cta {
+    background-color:#0F3F49;
+}
+
+/* ======================== */
+.title span {
+  font-family: 'Poppins';
+  text-align: center;
+  margin-top: 30px;
+  --total: calc(var(--duration) + var(--delay));
+  position: relative;
+  display: block;
+  color: transparent;
+  overflow: hidden;
+  animation: revealText 1s var(--total) forwards;
+}
+
+.title span::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleX(0);
+  transform-origin: right;
+  background: #47A354;
+  animation:
+      rollIn var(--duration) var(--delay) forwards,
+      rollOut var(--duration) var(--total) forwards;
+}
+
+.title span:nth-child(2)::after {
+  border-top: 3px solid #47A354;
+}
+
+@keyframes revealText {
+  to {
+      color: #fff;
+  }
+}
+
+@keyframes rollIn {
+  from {
+      transform: scaleX(0);
+  }
+
+  to {
+      transform: scaleX(1);
+  }
+}
+
+@keyframes rollOut {
+  from {
+      transform: translateX(0);
+  }
+
+  to {
+      transform: translateX(105%);
+  }
+}
+
+.paragraph span {
+  color: white;
+  font-size: 30px;
+  font-family: 'Lato';
+  margin-top: 40px;
+  text-align: center;
+  display: block; opacity: 0;
+  animation: reveal .5s forwards var(--delay);
+}
+
+@keyframes reveal {
+  from { translate: 0 20px; }
+  to { translate: none; opacity: 1; }
+}
+
+.reka {
+  text-align: right;
+}
