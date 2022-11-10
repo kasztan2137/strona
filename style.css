@@ -73,23 +73,56 @@
     background-color:#0F3F49;
 }
 
-/* ---------NAVBAR_MOBILE--------- */
+/* ---------NAVBAR FOR TABLETS--------- */
+
+@media only screen and (min-width: 768px) {
+    .nav_btn a, .contact {
+        font-family: 'Lato', sans-serif;
+        font-weight: 500;
+        font-size: 60px;
+        color: whitesmoke;
+        text-decoration: none;
+        background: #0F3F49;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .nav_btn a, .contact {
+        font-family: 'Lato', sans-serif;
+        font-weight: 500;
+        font-size: 25px;
+        color: whitesmoke;
+        text-decoration: none;
+        background: #0F3F49;
+    }
+}
+
+
+/* ---------NAVBAR FOR MOBILES--------- */
+
+@media only screen and (min-width: 375px) {
+    .nav_btn a, .contact {
+        font-family: 'Lato', sans-serif;
+        font-weight: 500;
+        font-size: 11px;
+        color: whitesmoke;
+        background: #0F3F49;
+    }
+
+    .logo {
+        cursor: pointer;
+        margin-left: 15px;
+        background-color: #0F3F49;
+        height: 40px;
+    }
+}
 
 @media only screen and (max-width: 640px) {
     .nav_btn a, .contact {
         font-family: 'Lato', sans-serif;
-        font-weight: 500px;
+        font-weight: 500;
         font-size: 11px;
         color: whitesmoke;
-        text-decoration: none;
-        background: #0F3F49;
-    }
-
-    .nav_bar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 30px 10px;
         background: #0F3F49;
     }
 
@@ -97,112 +130,18 @@
         cursor: pointer;
         margin-left: 15px;
         background-color: #0F3F49;
-        height: 60px;
+        height: 40px;
     }
 
-    .nav_links {
-        list-style: none; 
-        background-color: #0F3F49;   
-    }
-    
-    .nav_links li {
-        display: inline-block;
-        padding: 0px 20px;
-        background: #0F3F49;
-    }
-    
-    .nav_links li a {
-        transition: all 0.3s ease 0s;
-        background-color: #0F3F49;
-    }
-    
-    .nav_links li a:hover {
-        color: #25FF68;
-    }
-    
-    .contact {
-        padding: 9px;
-        background-color: #47A354;
-        border: none;
-        border-radius: 50px;
-        cursor: pointer;
-        transition: all 0.5s ease 0s;
-        margin: 15px;
-    }
-    
-    .contact:hover {
-        background-color: #25FF68
-        
-    }
-    
-    .cta {
-        background-color:#0F3F49;
-    }
-    
-}
-
-@media only screen and (min-width: 340px) {
-    .nav_btn a, .contact {
-        font-family: 'Lato', sans-serif;
-        font-weight: 500px;
-        font-size: 30px;
-        color: whitesmoke;
-        text-decoration: none;
-        background: #0F3F49;
-    }
-
-    .nav_bar {
-        display: flex;
-        justify-content: space-between;
-        padding: 30px 2px;
-        background: #0F3F49;
-    }
-
-    .logo {
-        cursor: pointer;
-        margin-left: 15px;
-        background-color: #0F3F49;
-        height: 60px;
-    }
-
-    .nav_links {
-        list-style: none; 
-        background-color: #0F3F49;   
-    }
-    
-    .nav_links li {
-        display: inline-block;
-        padding: 0px 20px;
-        background: #0F3F49;
-    }
-    
-    .nav_links li a {
-        transition: all 0.3s ease 0s;
-        background-color: #0F3F49;
-    }
-    
-    .nav_links li a:hover {
-        color: #25FF68;
-    }
-    
-    .contact {
-        padding: 9px;
-        background-color: #47A354;
-        border: none;
-        border-radius: 50px;
-        cursor: pointer;
-        transition: all 0.5s ease 0s;
-        margin: 15px;
-    }
-    
-    .contact:hover {
-        background-color: #25FF68
-        
-    }
-    
-    .cta {
-        background-color:#0F3F49;
-    }
+    .paragraph span {
+        color: white;
+        font-size: 50px;
+        font-family: 'Lato';
+        margin-top: 40px;
+        text-align: center;
+        display: block; opacity: 0;
+        animation: reveal .5s forwards var(--delay);
+      }
 }
 
 /* ---------TITLE & PARAGRPH--------- */
