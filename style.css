@@ -176,5 +176,4 @@
         display: block; opacity: 0;
         animation: reveal .5s forwards var(--delay);
       }
-      
 }
